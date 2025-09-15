@@ -1,0 +1,23 @@
+# Python version
+python==3.7.4
+
+# Python libraries
+numpy
+scipy
+matplotlib
+pandas
+seaborn
+statsmodels
+pandas-datareader
+requests
+tqdm
+tabulate
+psutil
+argparse
+
+# Deep Learning framework
+pytorch
+tensorboard
+
+# OpenAI Gym RL framework
+gym

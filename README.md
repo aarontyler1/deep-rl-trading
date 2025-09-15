@@ -42,7 +42,7 @@ deep-rl-trading/
 Simulating (training and testing) a chosen supported algorithmic trading strategy on a chosen supported stock is performed by running the following command:
 
 ```bash
-python main.py -strategy STRATEGY -stock STOCK -frequency DAILY
+python python src/main.py -strategy STRATEGY -stock STOCK -frequency DAILY
 ```
 
 with:

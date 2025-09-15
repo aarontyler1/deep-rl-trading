@@ -52,7 +52,7 @@ deep-rl-trading/
 ├─ requirements.txt
 ├─ README.md
 └─ LICENSE
-
+```
 
 # Usage
 

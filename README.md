@@ -1,12 +1,12 @@
-# An Application of Deep Reinforcement Learning to Algorithmic Trading
+# Deep Reinforcement Learning for Algorithmic Trading (TDQN & TPPO)
 
 This repository contains the experimental code and results from my MSc dissertation at the **University of Bristol**.  
 It explores the application of **Deep Reinforcement Learning (DRL)** to algorithmic trading, benchmarking classical strategies against modern RL agents.
 
 Implemented strategies include:
-* **Classical trading strategies**: Buy & Hold, Sell & Hold, Trend Following, Mean Reversion.  
-* **TDQN (Trading Deep Q-Network)**: a DRL agent adapted for trading.  
-* **TPPO (Trading Proximal Policy Optimization)**: a novel DRL agent developed in this research to improve adaptability in volatile markets.  
+* **Classical trading strategies**: Buy & Hold, Sell & Hold, Trend Following, Mean Reversion  
+* **TDQN (Trading Deep Q-Network)**: a DRL agent adapted for trading  
+* **TPPO (Trading Proximal Policy Optimization)**: a novel DRL agent developed in this research to improve adaptability in volatile markets  
 
 The framework provides:
 * Market data downloading & augmentation  
@@ -16,39 +16,22 @@ The framework provides:
 
 ---
 
-Experimental code is supporting the results presented in the scientific research paper:
-> Thibaut Théate and Damien Ernst. "An Application of Deep Reinforcement Learning to Algorithmic Trading." (2020).
-> [[arxiv]](https://arxiv.org/abs/2004.06627)
-
-
-
 # Dependencies
 
-The dependencies are listed in the text file "requirements.txt":
+The dependencies are listed in the text file `requirements.txt`.
 
 ## Repository structure
 
 ```text
 deep-rl-trading/
 ├─ src/
-│  ├─ agents/
-│  │  ├─ TDQN.py
-│  │  └─ TPPO.py
-│  ├─ envs/
-│  │  ├─ tradingEnv.py
-│  │  ├─ tradingSimulator.py
-│  │  └─ fictiveStockGenerator.py
-│  ├─ strategies/
-│  │  └─ classicalStrategy.py
-│  ├─ utils/
-│  │  ├─ tradingPerformance.py
-│  │  ├─ timeSeriesAnalyser.py
-│  │  ├─ dataDownloader.py
-│  │  └─ dataAugmentation.py
-│  └─ main.py
-├─ notebooks/
-│  └─ scatterplot.ipynb
-├─ results/
+│  ├─ agents/          # RL agents (TDQN, TPPO)
+│  ├─ envs/            # Trading environment + simulator
+│  ├─ strategies/      # Classical strategies
+│  ├─ utils/           # Data, performance, and analysis tools
+│  └─ main.py          # Entry point
+├─ notebooks/          # Jupyter notebooks for analysis
+├─ results/            # Generated figures and metrics
 ├─ requirements.txt
 ├─ README.md
 └─ LICENSE
@@ -59,7 +42,7 @@ deep-rl-trading/
 Simulating (training and testing) a chosen supported algorithmic trading strategy on a chosen supported stock is performed by running the following command:
 
 ```bash
-python main.py -strategy STRATEGY -stock STOCK -frequency -DAILY
+python main.py -strategy STRATEGY -stock STOCK -frequency DAILY
 ```
 
 with:

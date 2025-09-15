@@ -1,5 +1,22 @@
 # An Application of Deep Reinforcement Learning to Algorithmic Trading
-Experimental code supporting the results presented in the scientific research paper:
+
+This repository contains the experimental code and results from my MSc dissertation at the **University of Bristol**.  
+It explores the application of **Deep Reinforcement Learning (DRL)** to algorithmic trading, benchmarking classical strategies against modern RL agents.
+
+Implemented strategies include:
+* **Classical trading strategies**: Buy & Hold, Sell & Hold, Trend Following, Mean Reversion.  
+* **TDQN (Trading Deep Q-Network)**: a DRL agent adapted for trading.  
+* **TPPO (Trading Proximal Policy Optimization)**: a novel DRL agent developed in this research to improve adaptability in volatile markets.  
+
+The framework provides:
+* Market data downloading & augmentation  
+* Custom trading environment  
+* Training and evaluation of RL agents  
+* Benchmarking with metrics such as **Sharpe ratio, Sortino ratio, maximum drawdown, and profitability**
+
+---
+
+Experimental code is supporting the results presented in the scientific research paper:
 > Thibaut Théate and Damien Ernst. "An Application of Deep Reinforcement Learning to Algorithmic Trading." (2020).
 > [[arxiv]](https://arxiv.org/abs/2004.06627)
 
@@ -9,7 +26,20 @@ Experimental code supporting the results presented in the scientific research pa
 
 The dependencies are listed in the text file "requirements.txt":
 
-
+deep-rl-trading/
+│
+├── src/
+│   ├── agents/          # RL agents (TDQN, TPPO)
+│   ├── envs/            # Trading environment + simulator
+│   ├── strategies/      # Classical strategies
+│   ├── utils/           # Data, performance, time series tools
+│   └── main.py          # Entry point for experiments
+│
+├── notebooks/           # Jupyter notebooks for analysis & plots
+├── results/             # Generated figures, metrics
+├── requirements.txt     # Dependencies
+├── README.md
+└── LICENSE
 
 
 
@@ -22,14 +52,12 @@ python main.py -strategy STRATEGY -stock STOCK -frequency -DAILY
 ```
 
 with:
-* STRATEGY being the name of the trading strategy (by default TDQN),
-* STOCK being the name of the stock (by default Apple).
-* FREQUENCY being the name of the frequency of data you want to use (by default daily)
+* STRATEGY: trading strategy (TDQN, TPPO, BuyAndHold, TrendFollowing, etc.)
+* STOCK: ticker symbol (e.g. AAPL)
+* FREQUENCY being the name of the frequency of data you want to use (by default daily or can be adjusted to hourly)
             This requires changes to the starting,ending,splitting dates as yahoo finance only offers hourly data for the past 730 days
 
 The performance of this algorithmic trading policy will be automatically displayed in the terminal, and some graphs will be generated and stored in the folder named "Figures".
-
-
 
 # Citation
 

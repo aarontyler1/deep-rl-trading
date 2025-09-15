@@ -29,6 +29,10 @@ import torch.autograd as autograd
 import torch.nn.functional as F
 from torch.utils.tensorboard import SummaryWriter
 
+# Code for use using the current directory formatting
+from src.envs.tradingEnv import TradingEnv
+from src.utils.tradingPerformance import PerformanceEstimator
+
 from tradingPerformance import PerformanceEstimator
 from dataAugmentation import DataAugmentation
 from tradingEnv import TradingEnv

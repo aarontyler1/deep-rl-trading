@@ -26,21 +26,32 @@ Experimental code is supporting the results presented in the scientific research
 
 The dependencies are listed in the text file "requirements.txt":
 
-deep-rl-trading/
-│
-├── src/
-│   ├── agents/          # RL agents (TDQN, TPPO)
-│   ├── envs/            # Trading environment + simulator
-│   ├── strategies/      # Classical strategies
-│   ├── utils/           # Data, performance, time series tools
-│   └── main.py          # Entry point for experiments
-│
-├── notebooks/           # Jupyter notebooks for analysis & plots
-├── results/             # Generated figures, metrics
-├── requirements.txt     # Dependencies
-├── README.md
-└── LICENSE
+## Repository structure
 
+```text
+deep-rl-trading/
+├─ src/
+│  ├─ agents/
+│  │  ├─ TDQN.py
+│  │  └─ TPPO.py
+│  ├─ envs/
+│  │  ├─ tradingEnv.py
+│  │  ├─ tradingSimulator.py
+│  │  └─ fictiveStockGenerator.py
+│  ├─ strategies/
+│  │  └─ classicalStrategy.py
+│  ├─ utils/
+│  │  ├─ tradingPerformance.py
+│  │  ├─ timeSeriesAnalyser.py
+│  │  ├─ dataDownloader.py
+│  │  └─ dataAugmentation.py
+│  └─ main.py
+├─ notebooks/
+│  └─ scatterplot.ipynb
+├─ results/
+├─ requirements.txt
+├─ README.md
+└─ LICENSE
 
 
 # Usage

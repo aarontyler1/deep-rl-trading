@@ -1,5 +1,8 @@
 # Deep Reinforcement Learning for Algorithmic Trading (TDQN & TPPO)
 
+[![Dissertation](https://img.shields.io/badge/PDF-Dissertation-red)](./docs/Dissertation.pdf)
+
+
 This repository contains the experimental code and results from my MSc dissertation at the **University of Bristol**.  
 It explores the application of **Deep Reinforcement Learning (DRL)** to algorithmic trading, benchmarking classical strategies against modern RL agents.
 

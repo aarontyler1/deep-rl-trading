@@ -1,8 +1,8 @@
 # Deep Reinforcement Learning for Algorithmic Trading (TDQN & TPPO)
 
-📄 Full dissertation: [/docs/Dissertation.pdf](./docs/Dissertation.pdf)
+📄 Full dissertation: [![Dissertation](https://img.shields.io/badge/PDF-Dissertation-red)](./docs/Dissertation.pdf)
 
-[![Dissertation](https://img.shields.io/badge/PDF-Dissertation-red)](./docs/Dissertation.pdf)
+
 
 
 This repository contains the experimental code and results from my MSc dissertation at the **University of Bristol**.  

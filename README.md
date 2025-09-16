@@ -3,7 +3,7 @@
 ## Dissertation
 
 Full dissertation supported by this code can be found here:  
-[![Dissertation](https://img.shields.io/badge/PDF-Dissertation-red)](./docs/Dissertation.pdf)  
+[![Dissertation](https://img.shields.io/badge/PDF-Dissertation-red)](./src/docs/Dissertation.pdf)  
 
 
 

@@ -1,7 +1,10 @@
 # Deep Reinforcement Learning for Algorithmic Trading (TDQN & TPPO)
 
-📄 Full dissertation: [![Dissertation](https://img.shields.io/badge/PDF-Dissertation-red)](./docs/Dissertation.pdf)
+## Dissertation
 
+Full dissertation supported by this code can be found here:  
+[![Dissertation](https://img.shields.io/badge/PDF-Dissertation-red)](./docs/Dissertation.pdf)  
+📄 [/docs/Dissertation.pdf](./docs/Dissertation.pdf)
 
 
 
